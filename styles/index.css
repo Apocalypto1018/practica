@@ -1,0 +1,280 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+body {
+  font-family: "Noto Serif", serif;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+  padding: 50px 0px;
+}
+header {
+  height: 100vh;
+  background-image: linear-gradient(
+      to top,
+      rgba(161, 140, 209, 0.493) 0%,
+      rgba(251, 194, 235, 0.5) 100%
+    ),
+    url(../images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: white;
+}
+
+.title {
+  padding: 0px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 50px;
+}
+
+.menuIcon {
+  position: fixed;
+  cursor: pointer;
+  top: 30px;
+  right: 30px;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 1px 1px 5px rgb(225, 240, 217);
+}
+
+.menu {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  width: 20vw;
+  height: 100%;
+  background-image: linear-gradient(
+    135deg,
+    rgb(102, 126, 234) 0%,
+    rgb(118, 75, 162) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  transform: translate(110%);
+}
+
+.spread {
+  transform: translate(0);
+}
+
+.menu a {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.subtitle {
+  text-align: center;
+  font-weight: 300;
+  color: #9f8ad0;
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+.container-service {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.container-service img {
+  width: 40%;
+}
+.listServices {
+  width: 45%;
+}
+
+.service {
+  margin-bottom: 20px;
+}
+.nService {
+  margin-bottom: 7px;
+  color: #9f8ad0;
+}
+.number {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  color: white;
+  text-align: center;
+  border-radius: 50%;
+  font-weight: 700;
+  line-height: 30px;
+  margin-right: 5px;
+  background-image: linear-gradient(
+    135deg,
+    rgb(102, 126, 234) 0%,
+    rgb(118, 75, 162) 100%
+  );
+}
+
+.container-gallery {
+  background: #f2f2f2;
+}
+
+.containerImagesGallery {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.image {
+  width: 30%;
+  height: 350px;
+  display: block;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.image-light {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(100%);
+  transition: transform 0.2s ease-in-out;
+}
+
+.show {
+  transform: scale(1);
+}
+
+.addimage {
+  width: 60%;
+  border-radius: 20px;
+  transform: scale(0);
+  transition: transform 0.3s 0.2s;
+}
+
+.showImage {
+  transform: scale(1);
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+
+.containerImagesExperts {
+  background: #f2f2f2;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 20px;
+}
+
+.conExperts {
+  width: 20%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.conExperts img {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
+.n-experts {
+  display: inline-block;
+  margin-top: 20px;
+  width: 100%;
+  font-weight: 400;
+}
+
+footer {
+  background: #9f8ad0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.contactUs {
+  color: #f2f2f2;
+  text-align: center;
+  font-weight: 300;
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.social-media {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social-media-icon {
+  display: inline-block;
+  margin-left: 20px;
+  width: 60px;
+  height: 60px;
+  border: 1px solid white;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+}
+
+.social-media-icon:hover {
+  background: white;
+  color: #764ba2;
+}
+
+.social-media-icon i {
+  font-size: 30px;
+  line-height: 60px;
+}
+
+.line {
+  width: 90%;
+  max-width: 100%;
+  margin: 0 auto;
+  height: 2px;
+  background: white;
+  margin-bottom: 60px;
+}
