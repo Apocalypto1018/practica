@@ -31,6 +31,7 @@ body {
   padding: 50px 0px;
 }
 header {
+  text-align: center;
   height: 100vh;
   background-image: linear-gradient(
       to top,
@@ -78,6 +79,7 @@ header {
     rgb(102, 126, 234) 0%,
     rgb(118, 75, 162) 100%
   );
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -85,8 +87,13 @@ header {
   transform: translate(110%);
 }
 
+.elementNav:hover {
+  font-size: 25px;
+}
+
 .spread {
   transform: translate(0);
+  transition: transform 0.5s 0.2s;
 }
 
 .menu a {
@@ -149,16 +156,21 @@ header {
 }
 
 .image {
+  object-fit: cover;
   width: 30%;
   height: 350px;
   display: block;
   border-radius: 15px;
   margin-bottom: 15px;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
-  cursor: pointer;
 }
 
-.image-light {
+.image:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.images-light {
   position: fixed;
   background: rgba(0, 0, 0, 0.7);
   width: 100%;
@@ -168,29 +180,29 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  transform: scale(0);
   transform: translate(100%);
-  transition: transform 0.2s ease-in-out;
-}
-
-.show {
-  transform: scale(1);
+  transition: ease 5.3s 0.2s ease-in-out;
 }
 
 .addimage {
+  object-fit: cover;
   width: 60%;
+  height: 70%;
   border-radius: 20px;
-  transform: scale(0);
-  transition: transform 0.3s 0.2s;
 }
 
 .showImage {
+  transform: translate(0);
   transform: scale(1);
+  transition: transform 0.5s 0.2s;
 }
 
 .close {
   position: absolute;
   top: 15px;
   right: 15px;
+  width: 40px;
   cursor: pointer;
 }
 
@@ -277,4 +289,92 @@ footer {
   height: 2px;
   background: white;
   margin-bottom: 60px;
+}
+
+@media screen and (max-width: 800px) {
+  .menu {
+    width: 50vw;
+  }
+  .title {
+    font-size: 40px;
+  }
+  .menuIcon {
+    width: 35px;
+    height: 35px;
+  }
+  .container-service img {
+    width: 80%;
+    margin-bottom: 40px;
+  }
+  .listServices {
+    width: 80%;
+  }
+
+  .addimage {
+    width: 80%;
+    height: 50%;
+  }
+
+  .image {
+    width: 45%;
+    height: 200px;
+  }
+
+  .conExperts {
+    width: 80%;
+  }
+
+  .footer-content {
+    justify-content: center;
+  }
+
+  .social-media {
+    width: 80%;
+    justify-content: space-evenly;
+  }
+
+  .contactUs {
+    text-align: center;
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .social-media-icon {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .title {
+    font-size: 20px;
+  }
+  .subtitle {
+    font-size: 20px;
+  }
+  .menuIcon {
+    width: 25px;
+    height: 25px;
+  }
+  .menu {
+    width: 65%;
+  }
+  .image {
+    width: 90%;
+    height: 150px;
+  }
+  .addimage {
+    width: 95%;
+    height: 40%;
+  }
+  .social-media {
+    width: 90%;
+  }
+
+  .contactUs {
+    width: 90%;
+  }
+
+  .social-media-icon {
+    margin-left: 5px;
+  }
 }
