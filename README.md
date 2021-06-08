@@ -1,6 +1,6 @@
 # practica
 
-agina de practica con HTML5 CSS Y JS
+Página de practica con HTML5 CSS Y JS
 
 # Demo 
 
